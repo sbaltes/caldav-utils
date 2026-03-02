@@ -40,7 +40,7 @@ def resolve_credentials(args):
 def connect(url, username, password, principal_path=None):
     """Connect to the CalDAV server and return the principal."""
     try:
-        client = caldav.DAVClient(url=url, username=username, password=password, timeout=30)
+        client = caldav.DAVClient(url=url, username=username, password=password, timeout=300)
         if principal_path:
             return caldav.Principal(client=client, url=url.rstrip("/") + "/" + principal_path.strip("/") + "/")
         principal = client.principal()
