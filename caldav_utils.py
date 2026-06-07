@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Purge, deduplicate, or make public events in a CalDAV calendar."""
+"""Purge, deduplicate, or make events public in a CalDAV calendar."""
 
 import argparse
 import getpass
@@ -413,7 +413,7 @@ def run(args):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Purge, deduplicate, or make public events in a CalDAV calendar.")
+    parser = argparse.ArgumentParser(description="Purge, deduplicate, or make events public in a CalDAV calendar.")
     parser.add_argument("--url", help="CalDAV server URL (env: CALDAV_URL)")
     parser.add_argument("--username", help="Username (env: CALDAV_USERNAME)")
     parser.add_argument("--principal-path", help="Principal path to skip discovery (e.g. /principals/users/8/)")

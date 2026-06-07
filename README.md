@@ -1,8 +1,8 @@
 # caldav-utils
 
-Purge, deduplicate, or make public events in a CalDAV calendar.
+Purge, deduplicate, or make events public in a CalDAV calendar.
 
-Works with any CalDAV server (Mailbox.org, Nextcloud, Fastmail, iCloud, etc.).
+Works with standard CalDAV servers — see [Common CalDAV URLs](#common-caldav-urls) below.
 
 ## How make-public works
 
